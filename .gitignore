@@ -4,3 +4,4 @@ node_modules
 
 # avoid committing generated index files
 _pagefind/
+.DS_Store
