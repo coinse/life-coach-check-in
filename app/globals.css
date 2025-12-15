@@ -221,3 +221,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Prevent navigating forward via the sidebar but keep previous links active */
+.nextra-sidebar ul li.active ~ li a,
+.nextra-mobile-nav ul li.active ~ li a {
+  pointer-events: none;
+  opacity: 0.4;
+  cursor: not-allowed;
+}
