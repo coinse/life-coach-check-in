@@ -14,9 +14,27 @@ export const metadata: Metadata = {
 // const banner = <Banner storageKey="some-key">This template was created with 🩸 and 💦 by <Link href="https://github.com/phucbm">PHUCBM</Link> 🐧</Banner>
 const navbar = (
     <Navbar
-        logo={<img src="/images/general/sia_logo_check_in.svg" alt="Logo" width={200} height={20}/>}
+        logo={
+            <>
+                <img
+                    src="/images/general/lifecoach_logo_check-in.svg"
+                    alt="Logo"
+                    width={200}
+                    height={20}
+                    className="block dark:hidden"
+                />
+                <img
+                    src="/images/general/lifecoach_logo_check-in_dark.svg"
+                    alt="Logo"
+                    width={200}
+                    height={20}
+                    className="hidden dark:block"
+                />
+            </>
+        }
         // ... Your additional navbar options
     />
+    
 )
 const footer = <Footer>MIT {new Date().getFullYear()} © Nextra.</Footer>
 
