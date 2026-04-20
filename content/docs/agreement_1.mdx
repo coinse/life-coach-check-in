@@ -2,50 +2,45 @@
 title: 연구 참여 동의
 navigation: true
 ---
-import {Steps, Cards} from 'nextra/components'
+import {Steps, Tabs} from 'nextra/components'
 import { ConfirmButton } from '@/components/confirm-button'
 
 # 연구 참여에 동의하십니까?
 
 <Callout>연구 설명문을 모두 확인하셨습니다.</Callout>
 
-연구 참여 동의는 다음 2단계로 진행됩니다:
+연구 참여 동의는 다음과 같은 절차로 진행됩니다.
 
-* **연구 동의 [1단계]**: 아래 문항에 "동의한다"로 체크하고, 답안을 제출해주세요.
-<br/>
-* **연구 동의 [2단계]**: 답안 제출 후 아래 절차에 따라 전자 동의서에 서명해주십시오 (TODO: 전자 동의서 자동 발송 가능한지 확인):
-    1. 카카오톡 채널 'KAIST 연세 일상코치' (카카오톡 ID: `kaistlifecoach`) 친구 추가 후, **성함**과 **연락처**를 남겨주세요. 
-    2. 연구원이 전자 동의서를 보내드리겠습니다.
-    3. 카카오톡으로 전달드리는 안내에 따라 **전자 동의 절차**를 진행해주시면 됩니다. (1분 이내 소요)
-
-### 연구 동의 [1단계]
-⚠️ **잠깐: 답안 제출이 완료되었는지 꼭 확인해주세요.**
 <Steps>
-    #### 설문을 완료하면, 우측 하단의 **화살표 버튼**을 눌러주세요.
+#### 카카오톡 채널 「KAIST 연세 일상코치」 (카카오톡 ID: `kaistlifecoach`) 채널을 친구 추가해주세요.
+아래의 **QR코드**를 스캔하시거나 **카카오톡 채널 홈 바로가기** 버튼을 클릭하세요.
+<Tabs items={['QR', '카카오톡 채널 홈 바로가기']}>
+  <Tabs.Tab>
+    ![](/images/general/kakao_channel_QR.png)
+  </Tabs.Tab>
+  <Tabs.Tab>
+    <ConfirmButton href="http://pf.kakao.com/_nQyxlX" label="카카오톡 채널 친구 추가" newTab />
+  </Tabs.Tab>
+</Tabs>
 
-    ![설문조사 제출 주의사항 1](https://www.dropbox.com/scl/fi/7jgvbeeoheaesczomwj0h/agreement_1.png?rlkey=zejvf6qlnbtegap8eux52d56x&raw=1)
-
-    #### 응답 완료 화면이 나오는 것을 확인해주세요. 응답 완료 화면이 나오지 않았다면, 설문이 완료되지 않은 것입니다.
-
-    ![설문조사 제출 주의사항 2](https://www.dropbox.com/scl/fi/jr94r2ldkew0hfdzf0heh/agreement_2.png?rlkey=gin19f45ooljnqhne91s9jwer&raw=1)
-</Steps>
-
-<iframe src="https://kaist.qualtrics.com/jfe/form/SV_cBxgc26wdrHqeDI" width="100%" height="800px"></iframe>
-
----
-
-### 연구 동의 [2단계]
-
-카카오톡 실행하기<br/> 
+또는 카카오톡 실행하기<br/> 
 ➡️ 검색: `일상코치`<br/>
 ➡️ `KAIST 연세 일상코치` 채널 추가 클릭<br/>
-➡️ 이름, 연락처 보내기
-
-<ConfirmButton href="http://pf.kakao.com/_nQyxlX" label="카카오톡 채널 친구 추가" newTab />
-또는, 위의 "카카오톡 채널 친구 추가" 버튼을 클릭하면 바로 저희 카카오톡 채널 페이지에 접속할 수 있습니다 (모바일 추천)
-
-<Callout><u>꼭 카카오톡 채널 추가를 완료해 주세요.</u> 추후 카카오톡 채널을 통해 문의 및 답변, 연구 참여와 관련된 공지사항 등의 안내가 이루어질 예정입니다. (아래 스크린샷 변경 예정) </Callout>
 
 ![](/images/general/kakao_channel_guide.png)
+
+#### "대화하기"를 눌러 카카오톡 채팅방에 **성함**과 **연락처**를 남겨주세요.
+<img src="/images/general/kakao_channel_contact.png" width="300px"></img>
+
+#### 확인 후 연구원이 메일로 전자 동의서를 보내드리겠습니다.
+
+#### 카카오톡으로 전달드리는 안내에 따라 **전자 동의 절차**를 진행해주시면 됩니다. (1분 이내 소요)
+
+</Steps>
+
+
+<Callout><u>꼭 카카오톡 채널 추가를 완료해 주세요.</u> 추후 카카오톡 채널을 통해 문의 및 답변, 연구 참여와 관련된 공지사항 등의 안내가 이루어질 예정입니다. </Callout>
+
+
 
 [⇢ 추후 절차 안내](/docs/further_process)
